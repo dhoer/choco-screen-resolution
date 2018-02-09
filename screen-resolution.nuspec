@@ -12,7 +12,7 @@
     <tags>windows display screen resolution</tags>
     <summary>Sets screen resolution on Windows OS</summary>
     <bugTrackerUrl>https://github.com/dhoer/choco-screen-resolution/issues</bugTrackerUrl>
-    <iconUrl>https://cdn.rawgit.com/dhoer/choco-screen-resolution/a24a9a1e/tools/icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/dhoer/choco-screen-resolution/9c3802b8/tools/icon.png</iconUrl>
     <licenseUrl>https://github.com/dhoer/choco-screen-resolution/blob/master/LICENSE</licenseUrl>
     <description>
       Screen Resolution sets the screen resolution on Windows virtual machines (VMs). This tool is useful for UI automated testing when the default resolution is not at the desired resolution.
