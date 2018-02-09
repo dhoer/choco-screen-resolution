@@ -3,19 +3,17 @@
 [![Chocolatey](https://img.shields.io/chocolatey/dt/screen-resolution.svg)](https://chocolatey.org/packages/screen-resolution)
 [![AppVeyor branch](https://img.shields.io/appveyor/ci/dhoer/choco-screen-resolution/master.svg)](https://ci.appveyor.com/project/dhoer/choco-screen-resolution)
 
-Sets screen resolution on Windows OS.
-
-Selenium testing in the cloud at a specific resolution is a use case where this comes in handy.
+Screen Resolution sets the screen resolution on Windows virtual machines (VMs). This tool is useful for UI automated testing when the default resolution is lower than the desired resolution.
 
 Installation of this package will do the following:
 
-- Creates local user account to Remote Desktop Protocol (RDP) at specified screen resolution (default is 1920x1080) into another user account on same Windows server
-- Enables [Remote Desktop connections](https://technet.microsoft.com/en-us/library/cc722151%28v=ws.10%29.aspx)
-- Bypasses [Identity Of The Remote Computer Verification](http://www.mytecbits.com/microsoft/windows/rdp-identity-of-the-remote-computer)
+- Create a local user account to Remote Desktop Protocol (RDP) at specified screen resolution (default is 1920x1080) into another user account on same virtual machine
+- Enable [Remote Desktop connections](https://technet.microsoft.com/en-us/library/cc722151%28v=ws.10%29.aspx)
+- Bypass [Identity Of The Remote Computer Verification](http://www.mytecbits.com/microsoft/windows/rdp-identity-of-the-remote-computer)
 
 A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vagrantfile) to provision a Chrome Selenium-Grid on Windows 10 with screen resolution set to 1366x768 is available. See [TESTING.md](https://github.com/dhoer/choco-screen-resolution/blob/master/TESTING.md) for more information.
 
-Tested against Windows Server 2012R2, Windows Server 2016, and Windows 10.
+Tested on Windows Server 2012R2, Windows Server 2016, and Windows 10 virtual machines (VMs).
 
 ## Quick Start
 
@@ -35,7 +33,7 @@ choco install -y screen-resolution --params "'/Width:1366 /Height:768 /Password:
 
 To automatically set Screen Resolution on server startup, you need
 to install package
-[autologon](https://chocolatey.org/packages/autologon) and run
+[autologon](https://chocolatey.org/packages/autologon).  Then run
 `autologon <RdpUserName> <RdpDomain> <RdpPassword>` once to set it up.
 
 ```
@@ -45,7 +43,7 @@ autologon rdp_local $env:userdomain redacted
 
 ### RDP Wrapper
 
-Non-Windows Servers, e.g., Windows 10, require package
+Non-Windows Servers, e.g., Windows 10, requires package
 [rdpwrapper](https://chocolatey.org/packages/rdpwrapper) to be
 installed. No other configuration is required.
 

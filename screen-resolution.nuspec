@@ -15,11 +15,9 @@
     <iconUrl>https://cdn.rawgit.com/dhoer/choco-screen-resolution/a24a9a1e/tools/icon.png</iconUrl>
     <licenseUrl>https://github.com/dhoer/choco-screen-resolution/blob/master/LICENSE</licenseUrl>
     <description>
-      Sets screen resolution on Windows OS.
+      Screen Resolution sets the screen resolution on Windows virtual machines (VMs). This tool is useful for UI automated testing when the default resolution is not at the desired resolution.
 
-      Selenium testing in the cloud at a specific resolution is a use case where this comes in handy.
-
-      Tested against Windows Server 2012R2, Windows Server 2016, and Windows 10.
+      Tested on Windows Server 2012R2, Windows Server 2016, and Windows 10 virtual machines (VMs).
 
       See https://github.com/dhoer/choco-screen-resolution for more information.
     </description>
