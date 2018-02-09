@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>screen-resolution</id>
+    <version>1.0.0</version>
+    <title>Screen Resolution</title>
+    <authors>https://github.com/dhoer/choco-screen-resolution/graphs/contributors</authors>
+    <owners>dhoer</owners>
+    <projectUrl>https://github.com/dhoer/choco-screen-resolution</projectUrl>
+    <packageSourceUrl>https://github.com/dhoer/choco-screen-resolution</packageSourceUrl>
+    <docsUrl>https://github.com/dhoer/choco-screen-resolution/blob/master/ReadMe.md</docsUrl>
+    <tags>windows display screen resolution</tags>
+    <summary>Sets screen resolution on Windows OS</summary>
+    <bugTrackerUrl>https://github.com/dhoer/choco-screen-resolution/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.rawgit.com/dhoer/choco-screen-resolution/a24a9a1e/tools/icon.png</iconUrl>
+    <licenseUrl>https://github.com/dhoer/choco-screen-resolution/blob/master/LICENSE</licenseUrl>
+    <description>
+      Sets screen resolution on Windows OS.
+
+      Selenium testing in the cloud at a specific resolution is a use case where this comes in handy.
+
+      Tested against Windows Server 2012R2, Windows Server 2016, and Windows 10.
+
+      See https://github.com/dhoer/choco-screen-resolution for more information.
+    </description>
+    <releaseNotes>https://github.com/dhoer/choco-selenium/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

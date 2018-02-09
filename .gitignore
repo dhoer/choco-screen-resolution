@@ -1,0 +1,4 @@
+*.nupkg
+Gemfile.lock
+target
+.vagrant

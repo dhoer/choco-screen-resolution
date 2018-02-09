@@ -1,0 +1,22 @@
+version: '{build}-{branch}'
+
+install:
+  - set PATH=C:\Ruby23\bin;%PATH%
+  - bundle install
+  - choco install chocolatey-core.extension
+  - choco pack
+  - choco install -y screen-resolution --params "'/Width:1366 /Height:768 /Password:appveyor /RdpPassword:bfnhQ8UXRQ7R4eqb'" -dv -s .
+
+build: off
+
+before_test:
+  - ruby -v
+  - gem -v
+  - bundle -v
+
+test_script:
+  - bundle exec rake
+
+artifacts:
+  - path: '*.nupkg'
+    name: 'Screen Resolution'
