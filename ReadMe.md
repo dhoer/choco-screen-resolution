@@ -15,7 +15,9 @@ A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vag
 
 Tested on Windows Server 2012R2, Windows Server 2016, and Windows 10 virtual machines (VMs).
 
-## Quick Start
+## Usage
+
+### Quick Start
 
 Set screen resolution to 1920x1080 (default) and prompt for password:
 
@@ -28,6 +30,27 @@ Set screen resolution to 1366×768 and provide passwords:
 ```
 choco install -y screen-resolution --params "'/Width:1366 /Height:768 /Password:redacted /RdpPassword:redacted'"
 ```
+
+### Package Parameters
+
+The following package parameters can be set:
+
+- `/Password:` - Password of account to RDP into. Prompts for password,
+    when it is not provided.
+- `/RdpPassword:` - Password of RDP local user account to create.
+    Defaults to Password of account to RDP into, when it is not
+    provided.
+- `/UserName:` - Username of account to RDP into.
+    Default: `$env:UserName`.
+- `/RdpUserName:` - Username of RDP local user account to create.
+    Default: `rdp_local`.
+- `/RdpGroups:` - RDP group members.
+    Default: `@('Administrators', 'Remote Desktop Users')`.
+- `/Width:` - Display width in pixels. Default: `1920`.
+- `/Height:` - Display height in pixels. Default: `1080`.
+
+These parameters can be passed to the installer with the use of
+`--params`. For example: `--params "'/Password:redacted'"`.
 
 ### AutoLogon
 
@@ -50,26 +73,3 @@ installed. No other configuration is required.
 ```
 choco install -y rdpwrapper
 ```
-
-## Usage
-
-### Package Parameters
-
-The following package parameters can be set:
-
-- `/Password:` - Password of account to RDP into. Prompts for password,
-    when it is not provided.
-- `/RdpPassword:` - Password of RDP local user account to create.
-    Defaults to Password of account to RDP into, when it is not
-    provided.
-- `/UserName:` - Username of account to RDP into.
-    Default: `$env:UserName`.
-- `/RdpUserName:` - Username of RDP local user account to create.
-    Default: `rdp_local`.
-- `/RdpGroups:` - RDP group members.
-    Default: `@('Administrators', 'Remote Desktop Users')`.
-- `/Width:` - Display width in pixels. Default: `1920`.
-- `/Height:` - Display height in pixels. Default: `1080`.
-
-These parameters can be passed to the installer with the use of
-`--params`. For example: `--params "'/Password:redacted'"`.
