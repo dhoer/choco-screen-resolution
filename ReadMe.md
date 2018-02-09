@@ -3,7 +3,7 @@
 [![Chocolatey](https://img.shields.io/chocolatey/dt/screen-resolution.svg)](https://chocolatey.org/packages/screen-resolution)
 [![AppVeyor branch](https://img.shields.io/appveyor/ci/dhoer/choco-screen-resolution/master.svg)](https://ci.appveyor.com/project/dhoer/choco-screen-resolution)
 
-Screen Resolution sets the screen resolution on Windows virtual machines (VMs). This tool is useful for UI automated testing when the default resolution is lower than the desired resolution.
+Screen Resolution sets the screen resolution on Windows virtual machines (VMs). This tool is useful for UI automated testing when the default resolution is not at the desired resolution.
 
 Installation of this package will do the following:
 
