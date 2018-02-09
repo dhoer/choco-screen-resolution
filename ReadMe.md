@@ -13,7 +13,7 @@ Installation of this package will do the following:
 - Enables [Remote Desktop connections](https://technet.microsoft.com/en-us/library/cc722151%28v=ws.10%29.aspx)
 - Bypasses [Identity Of The Remote Computer Verification](http://www.mytecbits.com/microsoft/windows/rdp-identity-of-the-remote-computer)
 
-A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vagrantfile) to provision a Chrome Selenium-Grid on Windows 10 with screen resolution set to 1366x768 is available. See [testing readme](https://github.com/dhoer/choco-screen-resolution/blob/master/TESTING.md) for more information.
+A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vagrantfile) to provision a Chrome Selenium-Grid on Windows 10 with screen resolution set to 1366x768 is available. See [TESTING.md](https://github.com/dhoer/choco-screen-resolution/blob/master/TESTING.md) for more information.
 
 Tested against Windows Server 2012R2, Windows Server 2016, and Windows 10.
 
