@@ -67,9 +67,9 @@ autologon rdp_local $env:userdomain redacted
 
 ### RDP Wrapper
 
-Non-Windows Servers, e.g., Windows 10, requires package
+Non-Windows Servers, e.g., Windows 10, require package
 [rdpwrapper](https://chocolatey.org/packages/rdpwrapper) to be
-installed. No other configuration is required.
+installed. No additional configuration is required after install.
 
 ```
 choco install -y rdpwrapper
