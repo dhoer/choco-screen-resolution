@@ -10,12 +10,13 @@ Installation of this package will do the following:
 - Create a local user account to Remote Desktop Protocol (RDP) at specified screen resolution (default is 1920x1080) into another user account on same virtual machine
 - Enable [Remote Desktop connections](https://technet.microsoft.com/en-us/library/cc722151%28v=ws.10%29.aspx)
 - Bypass [Identity Of The Remote Computer Verification](http://www.mytecbits.com/microsoft/windows/rdp-identity-of-the-remote-computer)
-
-A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vagrantfile) to provision a Chrome Selenium-Grid on Windows 10 with screen resolution set to 1366x768 is available. See [TESTING.md](https://github.com/dhoer/choco-screen-resolution/blob/master/TESTING.md) for more information.
+- Allow TCP Port 3389 used by Windows Remote Desktop Protocol (RDP) in Windows Firewall
 
 Tested on Windows Server 2012R2, Windows Server 2016, and Windows 10 virtual machines (VMs).
 
 ## Usage
+
+A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vagrantfile) to provision a Chrome Selenium-Grid on Windows 10 with screen resolution set to 1366x768 is available. See [TESTING.md](https://github.com/dhoer/choco-screen-resolution/blob/master/TESTING.md) for more information.
 
 ### Quick Start
 
