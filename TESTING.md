@@ -18,17 +18,13 @@ Install the latest version of
 
 Clone the latest version from the repository:
 
-```
-git clone git@github.com:dhoer/choco-screen-resolution.git
-cd choco-screen-resolution
-```
+    git clone git@github.com:dhoer/choco-screen-resolution.git
+    cd choco-screen-resolution
 
 If vagrant was updated and throws errors, the vagrant plugins might
 need to be reinstalled:
 
-```
-vagrant plugin expunge --reinstall
-```
+    vagrant plugin expunge --reinstall
 
 ## Running
 
@@ -36,10 +32,8 @@ Startup Vagrant Windows 2016 Server, provision it (provision will
 occur automatically on first run), and then reload to
 start the Selenium Grid service:
 
-```
-vagrant up
-vagrant reload
-```
+    vagrant up
+    vagrant reload
 
 If provisioning and reload went ok, then Selenium Grid should be
 visible from here: http://localhost:4444/grid/console.
@@ -55,35 +49,27 @@ Note that `C:/Users/vagrant` is a different directory than the synced
 If you make changes in the project directory, you will need to
 provision again and reload in order to see those changes:
 
-```
-vagrant provision
-vagrant reload
-```
+    vagrant provision
+    vagrant reload
 
 ## Acceptance Testing
 
 From the guest Windows box, open a PowerShell window and run Ruby
 serverspec and selenium-webdriver tests via `rake`:
 
-```
-cd C:\vagrant
-rake
-```
+    cd C:\vagrant
+    rake
 
 Maven users can execute browser tests from host machine:
 
-```
-mvn clean test
-```
+    mvn clean test
 
 ## Integration Testing
 
 Maven users can override the selenium url and screen height and width
 via environment variables:
 
-```
-export SELENIUM_URL=http://example.com:4444/wd/hub
-export SCREEN_WIDTH=1280
-export SCREEN_HEIGHT=1024
-mvn clean test
-```
+    export SELENIUM_URL=http://example.com:4444/wd/hub
+    export SCREEN_WIDTH=1280
+    export SCREEN_HEIGHT=1024
+    mvn clean test
