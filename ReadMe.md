@@ -1,4 +1,4 @@
-﻿# Screen Resolution
+# Screen Resolution
 
 [![Chocolatey](https://img.shields.io/chocolatey/dt/screen-resolution.svg)](https://chocolatey.org/packages/screen-resolution)
 [![AppVeyor branch](https://img.shields.io/appveyor/ci/dhoer/choco-screen-resolution/master.svg)](https://ci.appveyor.com/project/dhoer/choco-screen-resolution)
@@ -22,15 +22,11 @@ A [Vagrantfile](https://github.com/dhoer/choco-screen-resolution/blob/master/Vag
 
 Set screen resolution to 1920x1080 (default) and prompt for password:
 
-```
-choco install -y screen-resolution
-```
+    choco install -y screen-resolution
 
 Set screen resolution to 1366×768 and provide passwords:
 
-```
-choco install -y screen-resolution --params "'/Width:1366 /Height:768 /Password:redacted /RdpPassword:redacted'"
-```
+    choco install -y screen-resolution --params "'/Width:1366 /Height:768 /Password:redacted /RdpPassword:redacted'"
 
 ### Package Parameters
 
@@ -60,10 +56,8 @@ to install package
 [autologon](https://chocolatey.org/packages/autologon).  Then run
 `autologon <RdpUserName> <RdpDomain> <RdpPassword>` once to set it up.
 
-```
-choco install -y autologon
-autologon rdp_local $env:userdomain redacted
-```
+    choco install -y autologon
+    autologon rdp_local $env:userdomain redacted
 
 ### RDP Wrapper
 
@@ -71,6 +65,4 @@ Non-Windows Servers, e.g., Windows 10, require package
 [rdpwrapper](https://chocolatey.org/packages/rdpwrapper) to be
 installed. No additional configuration is required after install.
 
-```
-choco install -y rdpwrapper
-```
+    choco install -y rdpwrapper
