@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>screen-resolution</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Screen Resolution</title>
     <authors>https://github.com/dhoer/choco-screen-resolution/graphs/contributors</authors>
     <owners>dhoer</owners>
@@ -21,7 +21,7 @@
 
       See https://github.com/dhoer/choco-screen-resolution for more information.
     </description>
-    <releaseNotes>https://github.com/dhoer/choco-selenium/releases</releaseNotes>
+    <releaseNotes>https://github.com/dhoer/choco-screen-resolution/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
