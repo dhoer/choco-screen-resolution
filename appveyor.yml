@@ -1,7 +1,7 @@
 version: '{build}-{branch}'
 
 install:
-  - set PATH=C:\Ruby23\bin;%PATH%
+  - set PATH=C:\Ruby24\bin;%PATH%
   - bundle install
   - choco install chocolatey-core.extension
   - choco pack
