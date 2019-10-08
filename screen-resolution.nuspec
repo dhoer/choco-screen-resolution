@@ -17,7 +17,7 @@
     <description>
       Screen Resolution sets the screen resolution on Windows virtual machines (VMs). This tool is useful for UI automated testing when the default resolution is not at the desired resolution.
 
-Tested on Windows Server 2012R2, Windows Server 2016, and Windows 10 virtual machines (VMs).
+Tested on Windows Server 2012R2, 2016, 2019 and Windows 10 virtual machines (VMs).
 
 See https://github.com/dhoer/choco-screen-resolution for more information.
 </description>

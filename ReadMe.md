@@ -12,7 +12,7 @@ Installation of this package will do the following:
 - Bypass [Identity Of The Remote Computer Verification](http://www.mytecbits.com/microsoft/windows/rdp-identity-of-the-remote-computer)
 - Allow TCP Port 3389 used by Windows Remote Desktop Protocol (RDP) in Windows Firewall
 
-Tested on Windows Server 2012R2, Windows Server 2016, and Windows 10 virtual machines (VMs).
+Tested on Windows Server 2012R2, 2016, 2019 and Windows 10 virtual machines (VMs).
 
 ## Usage
 
